@@ -4,7 +4,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo.errors import ServerSelectionTimeoutError, OperationFailure
 
 # Replace these with your actual environment variables or hardcoded strings
-MONGODB_URI = os.getenv("MONGODB_URI", "mongodb+srv://rahilalamyt80:NQcVBnb4S9vWMl9r@cluster-chatbot.gdw4c.mongodb.net/")
+MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
 MONGODB_DB_NAME = os.getenv("MONGODB_DB_NAME", "financial_analyzer")
 
 async def verify_connection():
